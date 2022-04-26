@@ -13,3 +13,9 @@
 #phone version
 
 <img src="src/assets/img/mobile_version.jfif" width="200px">
+
+
+
+#code
+
+<img src="src/assets/img/code.jpg" width="400px">
