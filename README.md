@@ -1,6 +1,9 @@
 # MyWeb Portfolio
 
-## application created in Angular HTML Scss
+## application created in 
+
+## app preview
+
 <img src="src/assets/img/my-web.jpg" width="400px">
 
 <img src="src/assets/img/my-web2.png" width="400px">
