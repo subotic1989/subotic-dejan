@@ -297,6 +297,7 @@ h3 {
   }
 
   .avatar-img {
+    display: none;
     //   width: 100px !important;
     //   height: 100px !important;
     min-width: 30% !important;
@@ -388,9 +389,6 @@ h3 {
     flex-wrap: unset;
     flex-direction: column;
   }
-  #work h2 {
-    padding: 30px 0 40px !important;
-  }
   .contact {
     display: flex;
     flex-direction: column;
@@ -452,9 +450,4 @@ h3 {
 }
 
 @media only screen and (max-device-width: 360px) {
-  .my-work__detail img {
-    top: 65px;
-    left: -5px;
-    z-index: -1;
-  }
 }
