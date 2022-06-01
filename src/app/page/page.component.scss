@@ -234,22 +234,22 @@ h3 {
 .tooltip {
   display: inline;
   position: relative;
-}
 
-.tooltip:hover:after {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  background: #444;
-  border-radius: 8px;
-  color: #fff;
-  content: attr(title);
-  margin: auto 0;
-  font-size: 14px;
-  padding: 13px;
-  min-width: max-content;
-  bottom: 70px;
-  left: -50%;
+  &:hover:after {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background: #444;
+    border-radius: 8px;
+    color: #fff;
+    content: attr(title);
+    margin: auto 0;
+    font-size: 14px;
+    padding: 13px;
+    min-width: max-content;
+    bottom: 70px;
+    left: -50%;
+  }
 }
 
 // copyright
@@ -297,6 +297,7 @@ h3 {
   }
 
   .avatar-img {
+    display: none;
     //   width: 100px !important;
     //   height: 100px !important;
     min-width: 30% !important;
@@ -388,9 +389,6 @@ h3 {
     flex-wrap: unset;
     flex-direction: column;
   }
-  #work h2 {
-    padding: 30px 0 40px !important;
-  }
   .contact {
     display: flex;
     flex-direction: column;
@@ -452,9 +450,4 @@ h3 {
 }
 
 @media only screen and (max-device-width: 360px) {
-  .my-work__detail img {
-    top: 65px;
-    left: -5px;
-    z-index: -1;
-  }
 }
