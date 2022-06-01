@@ -3,10 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { PageModule } from './page/page.module';
-import { SadComponent } from './sad/sad.component';
 
 @NgModule({
-  declarations: [AppComponent, SadComponent],
+  declarations: [AppComponent],
   imports: [BrowserModule, PageModule],
   providers: [],
   bootstrap: [AppComponent],
