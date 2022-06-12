@@ -157,6 +157,15 @@ h3 {
     display: flex;
     justify-content: center;
   }
+
+  .img__crypto {
+    padding-top: 20px;
+    max-width: 800px !important;
+
+    img {
+      width: 100% !important;
+    }
+  }
 }
 
 // contact
@@ -295,13 +304,6 @@ h3 {
   .about__detail {
     width: 100%;
   }
-
-  .avatar-img {
-    display: none;
-    //   width: 100px !important;
-    //   height: 100px !important;
-    min-width: 30% !important;
-  }
   .my-work {
     flex-direction: column;
   }
@@ -310,6 +312,16 @@ h3 {
   }
   .my-work img {
     max-width: 400px;
+  }
+  .my-work img {
+    min-width: unset;
+  }
+  .img__crypto img {
+    max-width: unset;
+  }
+  .avatar-img {
+    display: none;
+    min-width: 30% !important;
   }
 
   .my-work-2 {
@@ -372,17 +384,11 @@ h3 {
     display: block;
     position: relative;
   }
-  .my-work__detail img {
-    width: 115px;
-    top: 60px;
-    left: 5px;
-    position: absolute;
-  }
+
   .my-work-2 {
     flex-direction: column-reverse !important;
   }
   .my-work__detail {
-    margin-bottom: 30px;
     padding: 0px 0px 40px;
   }
   .my-work {
