@@ -131,6 +131,10 @@ h3 {
   &__detail {
     width: 48%;
     text-align: justify;
+
+    span {
+      font-weight: 700;
+    }
   }
 }
 
@@ -161,6 +165,7 @@ h3 {
   .img__crypto {
     padding-top: 20px;
     max-width: 800px !important;
+    margin: 0 auto;
 
     img {
       width: 100% !important;
