@@ -1,6 +1,6 @@
 <div class="page">
   <!-- header -->
-  <div class="header" id="header">
+  <div class="header padding-section" id="header">
     <h1>Dejan Subotic</h1>
     <ul class="header__nav">
       <li><a (click)="toAbout()" class="line-left">about me</a></li>
@@ -10,9 +10,8 @@
   </div>
 
   <!-- about me -->
+  <h2>About me</h2>
   <section class="about padding-section" id="about">
-    <h2>About me</h2>
-
     <div class="about__img">
       <img src="../../assets/img/avatar/me1.gif" alt="me" />
     </div>
@@ -34,9 +33,10 @@
         <span> Docker</span>,<span> Google Firebase Firestore</span>,<span>
           Angular Material</span
         >, <span> Git</span>, <span>GitHub</span> and now I'm in the process of
-        learning <span>Node.js</span> and <span>Express.js</span>. My sources
-        were online platforms with courses, hundreds of tutorials, many hours of
-        learning and daily research in this field. For me programming is fun and
+        learning backend: <span>Node.js</span>, <span>Express.js</span>,
+        <span>MongoDB</span> and <span>Mongoose</span>. My sources were online
+        platforms with courses, hundreds of tutorials, many hours of learning
+        and daily research in this field. For me programming is fun and
         challenging, therefore I'm looking forward for further improvement and
         learning a new programming languages. The product of my work so far is
         this website which is conceived as a short portfolio as a way I can
@@ -53,8 +53,8 @@
   </section>
 
   <!-- my work -->
+  <h2 style="margin-top: 80px">My Work</h2>
   <section class="padding-section" id="work">
-    <h2>My Work</h2>
     <div class="my-work">
       <!-- nike -->
       <div class="my-work__detail">
@@ -85,13 +85,12 @@
     </div>
 
     <!-- tennis -->
-    <div class="my-work my-work-2">
+    <div class="my-work tennis">
       <div class="my-work__img">
         <img src="../../assets/img/tennis2.gif" alt="tennis" />
       </div>
       <div class="my-work__detail">
         <h3>Tennis App</h3>
-
         <p>
           Unlike the first application, which was basically a copy of the
           already existing Nike online shop, this time I wanted to make
@@ -120,10 +119,9 @@
     </div>
 
     <!-- crypto -->
-    <div class="my-work my-work-2">
+    <div class="my-work crypto">
       <div class="my-work__detail">
         <h3>Crypto Tracker</h3>
-
         <p>
           This application is used to track the price of cryptocurrency. To
           retrieve the data I used API:
@@ -131,10 +129,10 @@
           application is not hosted but you can see the code on GitHub
           <a href="https://github.com/subotic1989/crypto-checker">here</a>.
         </p>
+      </div>
 
-        <div class="img__crypto">
-          <img src="../../assets/img/crypto.gif" alt="crypto" />
-        </div>
+      <div class="my-work__img">
+        <img src="../../assets/img/crypto.gif" alt="crypto" />
       </div>
     </div>
   </section>
@@ -142,36 +140,34 @@
   <!-- contact -->
   <section class="contact padding-section" id="contact">
     <h2>Contact</h2>
-    <p class="contact__msg">
+    <p>
       If you like my work or for any additional questions, fell free to contact
       me.
     </p>
-    <form class="contact__form" [formGroup]="form" (ngSubmit)="onSubmit()">
-      <div class="input">
-        <label for="name">NAME:</label>
-        <input id="name" type="text" formControlName="name" />
-      </div>
-      <div class="input">
-        <label for="email">EMAIL:</label>
-        <input id="email" type="email" formControlName="email" />
-      </div>
-      <div class="input">
-        <label for="message">MESSAGE:</label>
-        <textarea
-          id="message"
-          type="text"
-          cols="30"
-          rows="10"
-          formControlName="content"
-        ></textarea>
-      </div>
-      <button class="btn" type="submit">Send E-mail</button>
-    </form>
-    <img
-      src="../../assets/img/avatar/call3.gif"
-      alt="kiss"
-      style="width: 40%"
-    />
+    <div class="container">
+      <form class="form" [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="input">
+          <label for="name">NAME:</label>
+          <input id="name" type="text" formControlName="name" />
+        </div>
+        <div class="input">
+          <label for="email">EMAIL:</label>
+          <input id="email" type="email" formControlName="email" />
+        </div>
+        <div class="input">
+          <label for="message">MESSAGE:</label>
+          <textarea
+            id="message"
+            type="text"
+            cols="30"
+            rows="10"
+            formControlName="content"
+          ></textarea>
+        </div>
+        <button class="btn" type="submit">Send E-mail</button>
+      </form>
+      <img src="../../assets/img/avatar/call3.gif" alt="kiss" />
+    </div>
   </section>
 
   <!-- footer -->
